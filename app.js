@@ -19,7 +19,7 @@ function makeApiCall() {
     .then((data) => {
       const { advice, id } = data.slip;
       if (adviceId.textContent === id.toString()) return;
-      adviceText.textContent = advice;
+      adviceText.textContent = `“${advice}”`;
       adviceId.textContent = id;
     })
     .catch((e) => console.error(e))
