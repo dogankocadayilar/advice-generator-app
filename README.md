@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot 2023-02-03 at 13-26-43 Frontend Mentor Advice generator app](https://user-images.githubusercontent.com/75983262/216576858-1daa058b-ca6b-4ff0-b254-162787279e00.png)
 
 ### Links
 
