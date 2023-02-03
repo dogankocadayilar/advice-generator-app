@@ -4,6 +4,8 @@
 #####################################################
 *.sketch
 *.fig
+
+# ignore design file
 /design
 # Avoid accidental XD upload if you convert the design file
 ###############################################
