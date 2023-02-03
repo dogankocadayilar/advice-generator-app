@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+}
+
+main {
+  padding: 1em;
+}
+
+.card {
+  background-color: var(--Dark-Grayish-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 105px;
+  width: 100%;
+  padding: 2.5em 1.5em;
+  border-radius: 10px;
+  position: relative;
+  transition: all 200ms;
+}
+
+.advice-id {
+  color: var(--Neon-Green);
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+}
+
+.advice-text {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--Light-Cyan);
+}
+
+.divider {
+  width: 100%;
+  height: 15px;
+  background-image: url("/images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.5em;
+}
+
+.advice-button {
+  background-color: var(--Neon-Green);
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  border: none;
+  transition: 200ms;
+}
+
+.advice-button:hover,
+.advice-button:active {
+  box-shadow: 0 0 10px 1px var(--Neon-Green);
+  cursor: pointer;
+}
+.advice-button:disabled {
+  background-color: var(--Grayish-Blue);
+  color: white;
+}
+
+.advice-button:disabled:hover,
+.advice-button:disabled:active {
+  box-shadow: none;
+
+  cursor: not-allowed;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 375px;
+  text-align: center;
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 1em 3em;
+  color: var(--Light-Cyan);
+}
+
+footer a {
+  font-weight: 700;
+  color: var(--Neon-Green);
+}
+
+@media screen and (min-width: 400px) {
+  .card {
+    margin: 205px auto;
+    max-width: 545px;
+    padding: 3em;
+    border-radius: 15px;
+  }
+
+  .advice-id {
+    font-size: 0.8rem;
+  }
+
+  .advice-text {
+    font-size: 1.75rem;
+    margin-bottom: 1.35em;
+  }
+
+  .divider {
+    background-image: url("/images/pattern-divider-desktop.svg");
+    margin-bottom: 1.5em;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
