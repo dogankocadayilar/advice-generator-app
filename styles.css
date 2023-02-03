@@ -56,7 +56,7 @@ main {
 .divider {
   width: 100%;
   height: 15px;
-  background-image: url("/images/pattern-divider-mobile.svg");
+  background-image: url("https://raw.githubusercontent.com/dogankocadayilar/advice-generator-app/main/images/pattern-divider-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -129,7 +129,7 @@ footer a {
   }
 
   .divider {
-    background-image: url("/images/pattern-divider-desktop.svg");
+    background-image: url("https://raw.githubusercontent.com/dogankocadayilar/advice-generator-app/main/images/pattern-divider-desktop.svg");
     margin-bottom: 1.5em;
   }
 
